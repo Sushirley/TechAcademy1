@@ -1,81 +1,69 @@
-
 * {
     margin: 0%;
-}
-
-header {
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    
-}
-
-    nav {
-        float: right;
-
-        li {
-            display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
-            margin: 20px;
-
-            a {
-                color: white;
-                text-decoration: none;
-                transition: 0.5s all
-
-
-          }
-     }
-  }
-
-
-body{
-    background-color: #ffffff;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-footer {
-    background-color: rgb(0, 0, 0);
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-}
-
-footer img {
-    width: 30px; /* ajuste o tamanho da imagem */
-    height: 30px; /* ajuste o tamanho da imagem */
-    cursor: pointer; /* muda o cursor para mãozinha */
-}
-    
-    p {
-        text-align: center;
-
-
-    }
-
-    nav {
-        background-color: black;
-        padding: 10px;
-    
-        nav {
-            float: right;
-    
-            li {
-                display: inline-block;
-                font-family: Arial, Helvetica, sans-serif;
-                text-transform: uppercase;
-                margin: 20px;
-            a {
-                    color: white;
-                    text-decoration: none;
-                    transition: 0.5s all;
-
-                    
-                        }
-                    }
-                }
-            }
+    box-sizing: border-box;
+ }
+ 
+ header{
+     background-color: black;
+     display: flex;
+     justify-content: center; /* Deixar o conteúdo centralizado */
+     align-items: center;
+     padding: 20px 50px 20px 20px; /* Adiciona uma margem de 50px à direita dentro do background */
+     width: 100%; /* Ocupa a largura total da página */
      
+ }
+ 
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     margin-left: 158px; /* Ajusta a posição do conteúdo para a esquerda */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }  
+ 
+ .Lado-direito ul {
+     list-style: none;
+     margin: 0%;
+     padding: 0%;
+     display: flex;
+     
+ }
+ 
+ .Lado-direito li{
+     margin-left: 20px; /*adicionar margem a direita para separar da logo*/
+     font-size: 18px; /* Aumenta o tamanho da letra para 18px */
+ }
+ 
+ .logo {
+     margin: 0 50px;
+ }
+ 
+ .Lado-esquerdo ul {
+     list-style: none;
+     margin: 0%;
+    padding: 0%;
+     display: flex;
+ }
+ 
+ .Lado-esquerdo li {
+     margin-left: 20px; /*adicionar margem a esquerda para separar da logo*/
+     font-size: 18px; /* Aumenta o tamanho da letra para 18px */
+ }
+ 
+ a{
+     text-decoration: none;
+     color: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     text-transform: uppercase;
+     transition: 0.7s all; 
+ }
+ 
+ a:hover {
+     color: #ffaa00;
+ }
+ 
+ main {
+     width: 0%;
+ 
+ }
