@@ -21,6 +21,25 @@
 
 </head>
 
+<script>
+    // Ativa scroll suave para todos os links que começam com #
+    document.querySelectorAll('a[href^="#"]').forEach(ancora => {
+      ancora.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const id = this.getAttribute('href');
+        const destino = document.querySelector(id);
+  
+        if (destino) {
+          destino.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+  
+
 <body>
     <header class="header">
         <div class="container">
@@ -35,27 +54,27 @@
             <nav class="header-nav">
                 <ul>
                     <li>
-                        <a href="#" title="Home">
+                        <a 	href="#topo" title="Home">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Quem somos">
+                        <a href="#sobre" title="Quem somos">
                             Sobre
                         </a>
-                    </li>
+                    </li>                    
                     <li>
-                        <a href="#" title="História">
+                        <a href="#historia" title="História">
                             História
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Jogar">
+                        <a href="#jogar" title="Jogar">
                             Jogar
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Cadastro">
+                        <a href="#cadastro" title="Cadastro">
                             Cadastro
                         </a>
                     </li>
@@ -72,36 +91,104 @@
         <section class="banner-desktop">
 
         </section>
+
+
+        <!--Sobre o jogo-->
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2>Sobre o Jogo</h2>
+                <div class="caixa-iluminada">
+                    <p>
+                        <strong>The Lost Tooth Adventure</strong> foi criado por mim, <strong>Shirley Laiane</strong>, inspirado por um joguinho marcante da minha infância: <em>Anika’s Odyssey</em>. Assim como naquele jogo, onde uma criança parte em busca de algo querido que lhe foi tirado, quis trazer essa mesma sensação de aventura, mistério e encanto para uma nova geração.
+                    </p>
+        
+                    <p>
+                        Com muito carinho, a <strong>The Lost Tooth Company</strong> trabalhou na criação deste jogo com o desejo de despertar sorrisos, curiosidade e diversão nos jogadores — assim como <em>Anika’s Odyssey</em> me encantou anos atrás.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--História do jogo-->
+
+        <section id="historia" class="historia">
+            <div class="container">
+                <h2>História do Jogo</h2>
+                <div class="caixa-iluminada">
+                    <p><strong>🦷 The Lost Tooth Adventure 🦷</strong><br>
+                    <em>Uma jornada mágica em busca do que foi perdido...</em></p>
+        
+                    <p>
+                        Ania, uma menina curiosa e valente, perde seu primeiro dente e, incentivada por sua mãe, o deixa sob o travesseiro esperando a visita da Fada do Dente. Mas, naquela noite, a fada aparece, leva o dente... e não deixa nada em troca.
+                    </p>
+        
+                    <p>
+                        Ao ver a fada escapando pela janela, Ania decide segui-la, embarcando em uma aventura inesperada por um mundo mágico, cheio de segredos e desafios.
+                    </p>
+        
+                    <p>
+                        Em <strong>The Lost Tooth Adventure</strong>, você acompanhará Ania em sua busca por respostas — e pelo dente que desapareceu misteriosamente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Cadastro do jogo-->
+
+        <section id="cadastro" class="cadastro">
+            <div class="container">
+                <h2 data-aos="zoom-in">Cadastro</h2>
+                <form class="formulario" action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!--Rodapé do site-->
 
     <footer class="footer">
         <div class="container">
-            <img src="Imagens/FaviconTesteTamanho.png" style="width: 80px;" height="80px;" alt="The Lost Tooth">
+            <img src="Imagens/FaviconTesteTamanho.png" style="width: 80px; height: 80px; display: block; margin: auto;" alt="The Lost Tooth">
             <p>
                 Todos os direitos reservados - Desenvolvido por The Lost Tooth Company
             </p>
             <hr>
             <p>
-                <a href="http://facebook.com" title="Facebook">
+                <a href="http://facebook.com" title="Facebook" target="_blank">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="http://instagram.com" title="Instagram">
+                <a href="https://www.instagram.com/lost.tooth.adv?igsh=MW0yOHRwanliZ3hqNQ==" title="Instagram" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="http://youtube.com" title="Youtube">
+                <a href="http://youtube.com" title="Youtube" target="_blank">
                     <i class="fab fa-youtube"></i>
                 </a>
             </p>
         </div>
     </footer>
 
+
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/aos.js"></script>
+    <!--Abre/fecha o menu no mobile-->
     <script>
-        function mostrarMenu() {
+        function mostrarMenu() { 
             document.querySelector(".header-nav").classList.toggle("show");
         }
     </script>
+    <!--Ativa as animações AOS-->
     <script>
         AOS.init();
     </script>

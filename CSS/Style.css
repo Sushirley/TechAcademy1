@@ -13,6 +13,8 @@ html, body {
     background-color: #e0f5f8;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
+
 }
 
 body > main {
@@ -58,7 +60,7 @@ img {
 .header-menu {
     border: none;
     background: none;
-    color: white;
+    color: #ffbb00;
     font-size: 2em;
     padding: 10px;
     display: none;
@@ -84,14 +86,14 @@ img {
 
 .header-nav ul li {
     padding: 10px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #000000;
     width: 100%;
     text-align: center;
 }
 
 .header-nav ul li a {
     text-transform: uppercase;
-    color: #ccc;
+    color: #ffbb00;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -116,6 +118,126 @@ img {
     display: none;
 }
 
+
+
+/* Informações sobre o jogo */
+.sobre {
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.5em;
+    color: #ffbb00;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.sobre p {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* História do jogo */
+
+.historia {
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 2.5em;
+    color: #ffbb00;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.historia p {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.caixa-iluminada {
+    background-color: #1a1a1a;
+    border: 2px solid #ffbb00;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px #ffbb00, 0 0 40px (255, 76, 76, 0.3);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+.caixa-iluminada:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 30px #ffbb00, 0 0 60px rgb(255, 162, 0);
+}
+
+
+/* Cadastro do jogo */
+
+.cadastro {
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cadastro h2 {
+    font-size: 2.5em;
+    color: #ffbb00;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.formulario button {
+    width: 100%;
+    background-color: #ffbb00;
+    color: white;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #b78600;
+}
+
+
 /* FOOTER */
 .footer {
     text-align: center;
@@ -129,7 +251,7 @@ img {
 }
 
 .footer a {
-    color: #ccc;
+    color: #ffbb00;
     font-size: 1.5em;
     margin: 10px;
     text-decoration: none;
