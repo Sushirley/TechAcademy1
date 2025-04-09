@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--Titulo Aba/tab-->
     <title>The Lost Tooth Adventure</title>
 
     <!--Referencia para Favicon-->
     <link href="Imagens/FaviconTesteTamanho.png" rel="shortcut icon">
-    <!--Referencia para CSS-->
-    <link href="CSS/Style.css" rel="stylesheet">
+
+
 
 
 </head>
@@ -35,7 +41,7 @@
                     </li>
                     <li>
                         <a href="#" title="Quem somos">
-                            Quem somos
+                            Sobre
                         </a>
                     </li>
                     <li>
@@ -53,28 +59,20 @@
                             Cadastro
                         </a>
                     </li>
-                    <li>
-                        <a href="#" title="Suporte">
-                            Suporte
-                        </a>
-                    </li>
+
                 </ul>
             </nav>
-        </div>  
+        </div>
     </header>
+    <main>
+        <section class="banner-mobile">
+            <img src="Imagens/BannerTamanhoQueDeuBom-Recuperado.png" alt="Banner The Lost Tooth">
+        </section>
 
-    <section class="banner-mobile" data-aos="flip-left">
-        <img src="Imagens/BannerTamanhoQueDeuBom-Recuperado.png" alt="Banner The Lost Tooth">
-    </section>
+        <section class="banner-desktop">
 
-    <section class="banner-desktop">
-            <div class="flex">
-                <div class="col" data-aos="flip-left">
-                </div>
-
-                </div>
-            </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -101,8 +99,7 @@
     <script src="js/aos.js"></script>
     <script>
         function mostrarMenu() {
-            //document.querySelector(".header-nav")
-            $(".header-nav").toggle();
+            document.querySelector(".header-nav").classList.toggle("show");
         }
     </script>
     <script>
@@ -110,4 +107,5 @@
     </script>
 
 </body>
+
 </html>
