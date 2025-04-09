@@ -3,65 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo Aba/tab-->
     <title>The Lost Tooth Adventure</title>
+
+    <!--Referencia para Favicon-->
     <link href="Imagens/FaviconTesteTamanho.png" rel="shortcut icon">
+    <!--Referencia para CSS-->
     <link href="CSS/Style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
         <div class="container">
-        <div class="Lado-esquerdo">
-            <ul>
-                <li>
-                    <a href="#" title="Home">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Quem somos">
-                        Quem somos
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="História">
-                        História
-                </a>
-                </li>
-                </ul>
-        </div>
-        <div class="logo">
-            <img src="Imagens/LogoPrincipalGame.png" style="width: 180px;" height="180px;" alt="Logo">
-            </div>
-            <div class="Lado-direito">
-                <ul>
-                <li>
-                    <a href="#" title="Jogar">
-                        Jogar
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Cadastro">
-                        Cadastro
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="Suporte">
-                        Suporte
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+            <a href="index.html" title="Home" class="Header-Logo">
+                <img src="Imagens/LogoPrincipalGame.png" style="width: 180px;" height="180px;" alt="Logo">
+            </a>
 
-    <main>
-        <section id="Banner">
-            <img src="Imagens/Banner.png"> 
-        </section>
-    </main>
-</nav>
+            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="#" title="Home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Quem somos">
+                            Quem somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="História">
+                            História
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Jogar">
+                            Jogar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Cadastro">
+                            Cadastro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Suporte">
+                            Suporte
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
     </header>
-    
+
+    <section class="banner-mobile" data-aos="flip-left">
+        <img src="Imagens/BannerTamanhoQueDeuBom-Recuperado.png" alt="Banner The Lost Tooth">
+    </section>
+
+    <section class="banner-desktop">
+            <div class="flex">
+                <div class="col" data-aos="flip-left">
+                </div>
+
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="Imagens/FaviconTesteTamanho.png" style="width: 80px;" height="80px;" alt="The Lost Tooth">
+            <p>
+                Todos os direitos reservados - Desenvolvido por The Lost Tooth Company
+            </p>
+            <hr>
+            <p>
+                <a href="http://facebook.com" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://instagram.com" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://youtube.com" title="Youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarMenu() {
+            //document.querySelector(".header-nav")
+            $(".header-nav").toggle();
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
