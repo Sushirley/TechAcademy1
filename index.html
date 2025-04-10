@@ -74,8 +74,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#cadastro" title="Cadastro">
-                            Cadastro
+                        <a href="#contato" title="Contato">
+                            Contato
                         </a>
                     </li>
 
@@ -136,24 +136,21 @@
 
 
         <!--Cadastro do jogo-->
-
-        <section id="cadastro" class="cadastro">
-            <div class="container">
-                <h2 data-aos="zoom-in">Cadastro</h2>
-                <form class="formulario" action="#" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-        
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-        
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-        
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
+        <section id="contato" class="cadastro">
+            <h2 class="contato-titulo">Fale Conosco</h2>
+            <form class="formulario">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome">
+      
+              <label for="email">Email:</label>
+              <input type="text" id="email">
+      
+              <label for="telefone">Telefone:</label>
+              <input type="text" id="telefone">
+      
+              <button type="button" id="botao">Enviar</button>
+            </form>
+          </section>
     </main>
 
     <!--Rodapé do site-->
@@ -178,6 +175,42 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("botao").onclick = function () {
+          var nome = document.getElementById("nome").value;
+          var email = document.getElementById("email").value;
+          var telefone = document.getElementById("telefone").value;
+    
+          if (nome === "" && email === "" && telefone === "") {
+            alert("Por favor, preencha todos os campos.");
+          } else {
+            if (nome === "") {
+              alert("Informe o nome");
+            }
+    
+            if (email === "") {
+              alert("Informe o email");
+            } else if (email.indexOf("@") === -1) {
+              alert("O email deve conter '@'");
+            }
+    
+            if (telefone === "") {
+              alert("Informe o telefone");
+            }
+    
+            if (
+              nome !== "" &&
+              email !== "" &&
+              email.indexOf("@") !== -1 &&
+              telefone !== "" &&
+              (telefone)
+            ) {
+              alert("Formulário enviado com sucesso!");
+            }
+          }
+        }
+      </script>
 
 
     <script src="js/jquery-1.11.3.min.js"></script>
