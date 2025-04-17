@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--Titulo Aba/tab-->
+  <title>The Lost Tooth Adventure</title>
+
+  <!--Referencia para Favicon-->
+  <link href="Imagens/FaviconTesteTamanho.png" rel="shortcut icon">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" title="Home" class="Header-Logo">
+        <img src="Imagens/LogoPrincipalGame.png" style="width: 180px;" height="180px;" alt="Logo">
+      </a>
+
+      <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="index.html" title="Home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="index.html" title="Quem somos">
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="index.html" title="História">
+              História
+            </a>
+          </li>
+          <li>
+            <a href="index.html" title="Contato">
+              Contato
+            </a>
+          </li>
+          <li>
+            <a href="jogar.html" title="Jogar">
+              Jogar
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <iframe width="100%" height="500px"
+        src="Jogo/index.html"></iframe>
+    </div>
+  </main>
+
+    
+
+  <!--Rodapé do site-->
+
+  <footer class="footer">
+    <div class="container">
+      <img src="Imagens/FaviconTesteTamanho.png" style="width: 80px; height: 80px; display: block; margin: auto;" alt="The Lost Tooth">
+      <p>
+        Todos os direitos reservados - Desenvolvido por The Lost Tooth Company
+      </p>
+      <hr>
+      <p>
+        <a href="http://facebook.com" title="Facebook" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/lost.tooth.adv?igsh=MW0yOHRwanliZ3hqNQ==" title="Instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://youtube.com" title="Youtube" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/aos.js"></script>
+  <!--Abre/fecha o menu no mobile-->
+  <script>
+    function mostrarMenu() {
+      document.querySelector(".header-nav").classList.toggle("show");
+    }
+  </script>
+  <!--Ativa as animações AOS-->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
